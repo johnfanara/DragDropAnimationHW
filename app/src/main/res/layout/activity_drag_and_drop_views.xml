@@ -96,6 +96,7 @@
                 android:layout_margin="2dp"
                 />
 
+
         </LinearLayout>
 
 
@@ -107,7 +108,32 @@
         android:layout_weight="10"
         android:background="@color/design_default_color_secondary">
 
+        <ImageView
+            android:id="@+id/rocketAnimationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rocket_animation" />
 
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_secondary">
+
+        <Button
+            android:id="@+id/startAnimationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </LinearLayout>
